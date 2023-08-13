@@ -1,0 +1,42 @@
+.custom-table {
+  width: 1200px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.custom-table th,
+.custom-table td {
+  border: none;
+  padding: 12px 0;
+  text-align: left;
+  position: relative;
+}
+
+.custom-table th::after,
+.custom-table td::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0px;
+  border-bottom: 1px solid rgba(175, 175, 175, 0.317);
+}
+
+.custom-table td:first-child {
+  width: 20%;
+}
+
+.custom-table th {
+  background-color: transparent;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.red-flag {
+  color: red;
+}
